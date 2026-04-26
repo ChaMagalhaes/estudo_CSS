@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*Float faz o elemento sair do fluxo */
+
+        .container{
+            overflow: auto;
+            border: 1px solid black;
+
+            /*overflow: auto; na div faz pegar tamanho do elemento flutuante*/
+
+            /*
+            O float é uma propriedade do CSS que permite posicionar um elemento à esquerda ou à direita do seu "container", permitindo que elementos de texto e outros elementos inline "fluam" ao redor dele.
+
+            Pense no float como uma imagem em uma revista: a foto fica de um lado e o texto a contorna. Originalmente, ele foi criado exatamente para isso, embora por muitos anos tenha sido a ferramenta principal (e um tanto sofrida) para criar layouts de sites inteiros.
+            */
+        }
+
+        .container img{
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro site CSS</h1>
+
+    <div class="container">
+        <img width="250" src="https://imgs.search.brave.com/7MBodeC75XXFhDkxwa8fL3un5IaxZSL_IJHltDcsI-U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNjAv/NTMyLzY1Mi9zbWFs/bC9hLXdvb2Rlbi10/YWJsZS13aXRoLWEt/Ym90dGxlLW9mLXdh/dGVyLWFuZC1hLXN1/bi1zaGluaW5nLWlu/LXRoZS1iYWNrZ3Jv/dW5kLXBob3RvLmpw/Zw" alt="">
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis exercitationem libero, sit eligendi culpa distinctio provident! Voluptatem velit in, quidem quas, assumenda vel ducimus at excepturi hic optio magni inventore.</p>
+
+
+        <h2 style="clear:both">Teste</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod accusantium et, quisquam iusto voluptate reprehenderit doloremque esse iure ipsam vel alias, in maiores repellendus. Accusamus quae nostrum sunt quasi iste?</p>
+    </div>
+</body>
+</html>

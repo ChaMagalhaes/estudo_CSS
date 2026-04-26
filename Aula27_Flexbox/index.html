@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            /*box-sizing: border-box; faz com que a largura e altura dos elementos incluam o padding e a borda*/
+        }
+
+        .flex-pai {
+            background: blue;
+            display: flex;
+            /*display: flex; faz com que os elementos sejam dispostos em uma linha flexível*/
+
+            flex-direction: row;
+            /*flex-direction: row; faz que os elementos sejam dispostos em linha*/
+
+            flex-wrap: wrap;
+
+            /*flex-wrap: wrap; faz que quando chega no limite pule para outra linha*/
+
+            flex-flow: row wrap;
+            /*flex-flow: row wrap; é a combinação de flex-direction e flex-wrap*/
+
+            justify-content: flex-center;
+            /*Eixo X*/
+
+            /*justify-content: flex-center; alinha os itens ao centro do container flexível*/
+
+            /*space-between; distribui os itens com espaçamento igual entre eles*/
+
+            /*space-around; distribui os itens com espaçamento igual ao redor de cada item*/
+
+            align-items: center;
+            /*Eixo Y*/
+            /*align-items: center; alinha os itens ao centro do container flexível*/
+
+            /*Por padrao vem com stretch que significa alinhar ao longo do eixo principal do container pai*/
+
+            align-content: center;
+            /*Eixo Y*/
+            /*align-content: center; alinha os itens ao centro do container flexível*/
+
+
+
+        }
+
+        .flex-pai div {
+            background: white;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 30px;
+            text-align: center;
+
+            flex-grow: 1;
+            /*flex-grow: 1; faz com que os itens cresçam para preencher o espaço disponível no container flexível*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FlexBox</h1>
+
+    <div class="flex-pai">
+        <div>1</div>
+        <div>2</div>
+        <div style="flex: 15%;">3</div>
+        <!--flex: 15%; define a proporção do item dentro do container flexível-->
+        <div>4</div>
+    </div>
+</body>
+
+</html>
